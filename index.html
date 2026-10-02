@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="حسين المصري وأولاد العم - قعدتك ليها طعم تاني. كافيه في الجزيرة، شارع الزعفرانة، وسط البلد، مصر. مشروبات، حلويات، حجز طاولات." />
+  <meta name="keywords" content="كافيه, حسين المصري, أولاد العم, قهوة, وسط البلد, الجزيرة, حجز" />
+  <meta name="theme-color" content="#3C2A21" />
+  <title>حسين المصري وأولاد العم | قعدتك ليها طعم تاني</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">☕</span>
+        <span class="logo-text">حسين المصري وأولاد العم</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">الرئيسية</a>
+        <a href="#menu" class="nav-link">المنيو</a>
+        <a href="#reservation" class="nav-link">الحجز</a>
+        <a href="#about" class="nav-link">عن الكافيه</a>
+        <a href="#gallery" class="nav-link">معرض الصور</a>
+        <a href="#contact" class="nav-link">تواصل معنا</a>
+      </nav>
+      <a href="#reservation" class="btn btn-primary nav-cta">احجز الآن</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title animate-up">حسين المصري وأولاد العم</h1>
+      <p class="hero-tagline animate-up delay-1">قعدتك ليها طعم تاني ☕</p>
+      <p class="hero-desc animate-up delay-2">استمتع بأجمل المشروبات، أجواء مميزة، وقعدة رايقة مع حسين المصري وأولاد العم.</p>
+      <div class="hero-btns animate-up delay-3">
+        <a href="#menu" class="btn btn-primary btn-lg">استعرض المنيو</a>
+        <a href="#reservation" class="btn btn-outline btn-lg">احجز مكانك</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">المنيو</span>
+        <h2 class="section-title">قائمة المشروبات والحلويات</h2>
+        <p class="section-subtitle">اختار اللي يناسبك من تشكيلة واسعة من المشروبات والحلويات</p>
+      </div>
+
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="hot">المشروبات الساخنة</button>
+        <button class="filter-btn" data-filter="cold">المشروبات الباردة</button>
+        <button class="filter-btn" data-filter="special">المشروبات الخاصة</button>
+        <button class="filter-btn" data-filter="sweets">حلويات وسناكس</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- Hot drinks -->
+        <article class="menu-card" data-category="hot">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&h=300&fit=crop" alt="إسبريسو" loading="lazy" />
+            <span class="badge popular">الأكثر طلباً</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>إسبريسو</h3>
+            <p>قهوة مركزة غنية بنكهة القهوة الأصيلة</p>
+            <span class="price">55 ج.م</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="hot">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=300&fit=crop" alt="كابتشينو" loading="lazy" />
+            <span class="badge popular">الأكثر طلباً</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>كابتشينو</h3>
+            <p>قهوة إسبريسو مع حليب ورغوة ناعمة</p>
+            <span class="price">85 ج.م</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="hot">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1561047029-3000c68339a3?w=400&h=300&fit=crop" alt="لاتيه" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <h3>لاتيه</h3>
+            <p>مزيج ناعم من الإسبريسو والحليب المبخر</p>
+            <span class="price">90 ج.م</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="hot">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop" alt="قهوة تركي" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <h3>قهوة تركي</h3>
+            <p>قهوة تركية أصيلة محضرة على الطريقة التقليدية</p>
+            <span class="price">45 ج.م</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="hot">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400&h=300&fit=crop" alt="نسكافيه" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <h3>نسكافيه</h3>
+            <p>نسكافيه كلاسيك مع حليب حسب الرغبة</p>
+            <span class="price">50 ج.م</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="hot">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1597318181409-cf64d0b5d8a2?w=400&h=300&fit=crop" alt="شاي" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <h3>شاي</h3>
+            <p>شاي أسود أو أخضر أو بالنعناع الطازج</p>
+            <span class="price">35 ج.م</span>
+          </div>
+        </article>
+
+        <!-- Cold drinks -->
+        <article class="menu-card" data-category="cold">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=300&fit=crop" alt="آيس كوفي" loading="lazy" />
+            <span class="badge popular">الأكثر طلباً</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>آيس كوفي</h3>
+            <p>قهوة مثلجة منعشة مع حليب وثلج</p>
+            <span class="price">95 ج.م</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="cold">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop" alt="موهيتو" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <h3>موهيتو</h3>
+            <p>مشروب منعش بالنعناع والليمون والثلج</p>
+            <span class="price">80 ج.م</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="cold">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=400&h=300&fit=crop" alt="عصير مانجو" loading="lazy" />
+            <span class="badge popular">الأكثر طلباً</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>مانجو فريش</h3>
+            <p>مانجو فريش محضرة يومياً من فاكهة طازجة</p>
+            <span class="price">90 ج.م</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="cold">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop" alt="ميلك شيك" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <h3>ميلك شيك</h3>
+            <p>ميلك شيك كريمي بنكهات متنوعة (شوكولاتة، فراولة، فانيليا)</p>
+            <span class="price">100 ج.م</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="cold">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop&sat=-50" alt="آيس تي" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <h3>آيس تي</h3>
+            <p>شاي مثلج منعش بالليمون أو الخوخ</p>
+            <span class="price">60 ج.م</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="cold">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&h=300&fit=crop" alt="عصائر فريش" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <h3>عصائر فريش</h3>
+            <p>برتقال، فراولة، جوافة، ليمون — حسب الموسم</p>
+            <span class="price">75 ج.م</span>
+          </div>
+        </article>
+
+        <!-- Special -->
+        <article class="menu-card" data-category="special">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=400&h=300&fit=crop" alt="حسين سبيشال" loading="lazy" />
+            <span class="badge special-badge">توقيع</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>حسين سبيشال</h3>
+            <p>مزيج سري من القهوة والحليب والتوابل الخاصة بالكافيه</p>
+            <span class="price">110 ج.م</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="special">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=400&h=300&fit=crop" alt="أولاد العم لاتيه" loading="lazy" />
+            <span class="badge special-badge">توقيع</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>أولاد العم لاتيه</h3>
+            <p>لاتيه بنكهة الكراميل والبندق مع رغوة فنية</p>
+            <span class="price">120 ج.م</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="special">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop" alt="قهوة الجزيرة" loading="lazy" />
+            <span class="badge special-badge">توقيع</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>قهوة الجزيرة</h3>
+            <p>قهوة عربية فاخرة مع هيل وزعفران</p>
+            <span class="price">95 ج.م</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="special">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=400&h=300&fit=crop" alt="الشاي الملكي" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <h3>الشاي الملكي</h3>
+            <p>شاي فاخر بالزعفران والحليب والهيل</p>
+            <span class="price">70 ج.م</span>
+          </div>
+        </article>
+
+        <!-- Sweets -->
+        <article class="menu-card" data-category="sweets">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&h=300&fit=crop" alt="كريب" loading="lazy" />
+            <span class="badge popular">الأكثر طلباً</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>كريب</h3>
+            <p>كريب محشو بالشوكولاتة أو النوتيلا أو الفواكه</p>
+            <span class="price">85 ج.م</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="sweets">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?w=400&h=300&fit=crop" alt="وافل" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <h3>وافل</h3>
+            <p>وافل مقرمش مع صوص الشوكولاتة والآيس كريم</p>
+            <span class="price">95 ج.م</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="sweets">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop" alt="كيك" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <h3>كيك الشوكولاتة</h3>
+            <p>قطعة كيك شوكولاتة غنية ومحضرة يومياً</p>
+            <span class="price">70 ج.م</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="sweets">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1576107232684-1279f390859f?w=400&h=300&fit=crop" alt="بطاطس" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <h3>بطاطس مقلية</h3>
+            <p>بطاطس مقرمشة مع صلصة خاصة</p>
+            <span class="price">55 ج.م</span>
+          </div>
+        </article>
+        <article class="menu-card" data-category="sweets">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=400&h=300&fit=crop" alt="ساندوتش" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <h3>ساندوتشات خفيفة</h3>
+            <p>تشكيلة ساندوتشات بالجبن أو الديك الرومي أو الخضار</p>
+            <span class="price">80 ج.م</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation -->
+  <section class="section reservation-section" id="reservation">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">الحجز</span>
+        <h2 class="section-title">احجز مكانك</h2>
+        <p class="section-subtitle">احجز طاولتك مسبقاً واستمتع بقعدة مريحة بدون انتظار</p>
+      </div>
+
+      <div class="reservation-wrapper">
+        <div class="reservation-info">
+          <div class="info-card">
+            <i class="fas fa-users"></i>
+            <h4>عدد الأشخاص</h4>
+            <p>من شخص واحد حتى مجموعات كبيرة</p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-home"></i>
+            <h4>Indoor</h4>
+            <p>صالة داخلية مكيفة وأجواء هادئة</p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-tree"></i>
+            <h4>Outdoor</h4>
+            <p>جلسة خارجية مفتوحة ومميزة</p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-star"></i>
+            <h4>VIP / Private</h4>
+            <p>طاولات خاصة للمجموعات والاحتفالات</p>
+          </div>
+        </div>
+
+        <form class="reservation-form" id="reservationForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">الاسم</label>
+              <input type="text" id="name" name="name" placeholder="اسمك الكامل" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">رقم الهاتف</label>
+              <input type="tel" id="phone" name="phone" placeholder="01xxxxxxxxx" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="guests">عدد الأشخاص</label>
+              <select id="guests" name="guests" required>
+                <option value="">اختر العدد</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7+">7 أو أكثر</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="seatType">نوع المكان</label>
+              <select id="seatType" name="seatType" required>
+                <option value="">اختر النوع</option>
+                <option value="indoor">Indoor — داخلي</option>
+                <option value="outdoor">Outdoor — خارجي</option>
+                <option value="vip">VIP / Private Table</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">التاريخ</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="time">الوقت</label>
+              <select id="time" name="time" required>
+                <option value="">اختر الوقت</option>
+                <option value="10:00">10:00 ص</option>
+                <option value="11:00">11:00 ص</option>
+                <option value="12:00">12:00 م</option>
+                <option value="13:00">1:00 م</option>
+                <option value="14:00">2:00 م</option>
+                <option value="15:00">3:00 م</option>
+                <option value="16:00">4:00 م</option>
+                <option value="17:00">5:00 م</option>
+                <option value="18:00">6:00 م</option>
+                <option value="19:00">7:00 م</option>
+                <option value="20:00">8:00 م</option>
+                <option value="21:00">9:00 م</option>
+                <option value="22:00">10:00 م</option>
+                <option value="23:00">11:00 م</option>
+                <option value="00:00">12:00 ص</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="notes">ملاحظات (اختياري)</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="أي طلبات خاصة أو ملاحظات..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-block">تأكيد الحجز</button>
+        </form>
+      </div>
+
+      <!-- Success Modal -->
+      <div class="modal" id="successModal">
+        <div class="modal-content">
+          <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+          <h3>تم تأكيد الحجز بنجاح!</h3>
+          <p>شكراً لك. تم استلام طلب الحجز وسنتواصل معك قريباً لتأكيد التفاصيل.</p>
+          <p class="modal-note">ملاحظة: هذا عرض تجريبي — لا يتم إرسال بيانات حقيقية.</p>
+          <button class="btn btn-primary" id="closeModal">حسناً</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QR Code -->
+  <section class="section qr-section" id="qr">
+    <div class="container">
+      <div class="qr-wrapper">
+        <div class="qr-content">
+          <span class="section-badge">المنيو الرقمي</span>
+          <h2 class="section-title">المنيو معاك في أي وقت</h2>
+          <p>امسح الـ QR Code وشوف المنيو والأسعار من موبايلك بسهولة وسرعة.</p>
+          <p class="qr-hint">Scan to View Menu</p>
+        </div>
+        <div class="qr-code-box">
+          <div class="qr-frame">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://hussein-elmasry-cafe.demo/menu&color=3C2A21&bgcolor=F5F0E8" alt="QR Code للمنيو" class="qr-img" />
+          </div>
+          <p class="qr-label">امسح هنا للمنيو</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=500&h=600&fit=crop" alt="أجواء الكافيه" class="about-img main" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=300&h=400&fit=crop" alt="قهوة" class="about-img secondary" loading="lazy" />
+        </div>
+        <div class="about-content">
+          <span class="section-badge">عن الكافيه</span>
+          <h2 class="section-title">عن حسين المصري وأولاد العم</h2>
+          <p>مكان معمول عشان تجمع أصحابك، تقضي وقت حلو، وتستمتع بمشروبك المفضل في أجواء مريحة ومميزة.</p>
+          <p>في حسين المصري وأولاد العم بنقدم لك تجربة قعدة مصرية أصيلة مع لمسة عصرية — مشروبات عالية الجودة، حلويات طازة، وأجواء تخلّيك ترجع تاني.</p>
+          <div class="about-features">
+            <div class="feature">
+              <i class="fas fa-coffee"></i>
+              <span>مشروبات مميزة</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-couch"></i>
+              <span>أجواء مريحة</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>موقع مركزي</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">المعرض</span>
+        <h2 class="section-title">أجواء حسين المصري وأولاد العم</h2>
+        <p class="section-subtitle">شوف الكافيه من جوه وبره</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200&h=800&fit=crop">
+          <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&h=400&fit=crop" alt="داخل الكافيه" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&h=800&fit=crop">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=400&fit=crop" alt="قهوة" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=1200&h=800&fit=crop">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&h=400&fit=crop" alt="مشروب بارد" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&h=800&fit=crop">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop" alt="طاولات" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&h=800&fit=crop">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&h=400&fit=crop" alt="جلسة خارجية" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1200&h=800&fit=crop">
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&h=400&fit=crop" alt="ناس في الكافيه" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=1200&h=800&fit=crop">
+          <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&h=400&fit=crop" alt="حلويات" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+        <div class="gallery-item" data-src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1200&h=800&fit=crop">
+          <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600&h=400&fit=crop" alt="أجواء ليلية" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="إغلاق">&times;</button>
+    <img src="" alt="" id="lightboxImg" />
+  </div>
+
+  <!-- Contact -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">تواصل</span>
+        <h2 class="section-title">تواصل معنا</h2>
+        <p class="section-subtitle">إحنا هنا لأي استفسار أو حجز</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h4>الهاتف</h4>
+              <a href="tel:01001234567">0100 123 4567</a>
+              <a href="tel:01112345678">0111 234 5678</a>
+              <span class="demo-note">أرقام تجريبية للعرض</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <h4>واتساب</h4>
+              <a href="https://wa.me/201001234567" target="_blank" rel="noopener">0100 123 4567</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>الموقع</h4>
+              <p>الجزيرة – شارع الزعفرانة – وسط البلد – مصر</p>
+            </div>
+          </div>
+          <div class="contact-card hours-card">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>مواعيد العمل</h4>
+              <p><strong>السبت – الخميس</strong><br />10:00 ص – 2:00 ص</p>
+              <p><strong>الجمعة</strong><br />2:00 م – 2:00 ص</p>
+            </div>
+          </div>
+          <div class="contact-btns">
+            <a href="tel:01001234567" class="btn btn-primary"><i class="fas fa-phone"></i> اتصل بنا</a>
+            <a href="https://wa.me/201001234567" class="btn btn-whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> واتساب</a>
+            <a href="https://maps.google.com/?q=30.05594,31.22197" class="btn btn-outline" target="_blank" rel="noopener"><i class="fas fa-map"></i> الموقع على الخريطة</a>
+          </div>
+        </div>
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=31.21%2C30.04%2C31.24%2C30.07&layer=mapnik&marker=30.05594%2C31.22197"
+            width="100%"
+            height="100%"
+            style="border:0; border-radius: 16px; min-height: 400px;"
+            allowfullscreen
+            loading="lazy"
+            title="موقع الكافيه على الخريطة"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-icon">☕</span>
+            <span class="logo-text">حسين المصري وأولاد العم</span>
+          </a>
+          <p class="footer-tagline">قعدتك ليها طعم تاني ☕</p>
+          <p class="footer-loc">الجزيرة – شارع الزعفرانة – وسط البلد – مصر</p>
+        </div>
+        <div class="footer-links">
+          <h4>روابط سريعة</h4>
+          <a href="#home">الرئيسية</a>
+          <a href="#menu">المنيو</a>
+          <a href="#reservation">الحجز</a>
+          <a href="#about">عن الكافيه</a>
+          <a href="#contact">تواصل معنا</a>
+        </div>
+        <div class="footer-social">
+          <h4>تابعنا</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/201001234567" aria-label="WhatsApp" class="social-icon" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 حسين المصري وأولاد العم — جميع الحقوق محفوظة</p>
+        <p class="demo-badge">موقع تجريبي للعرض على صاحب الكافيه</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
